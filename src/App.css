@@ -36,3 +36,89 @@
     transform: rotate(360deg);
   }
 }
+
+/* src/App.css */
+
+.calendar {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: #f0f0f0;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.calendar-day {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background: #fff;
+}
+
+.calendar-day.today {
+  background: #ffeb3b;
+}
+
+.calendar-day.different-month {
+  color: #ccc;
+}
+.date-container {
+  width: 90px;
+  min-height: 85px;
+  padding: 5px;
+  border: 1px solid rgb(241, 241, 241);
+}
+.day-name-container {
+  width: 90px;
+  height: 30px;
+  padding: 5px;
+  border: 1px solid rgb(241, 241, 241);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+.nakshatra {
+  font-size: 12px;
+}
+.thithi {
+  font-size: 12px;
+}
+.gregorian-date {
+  font-size: 24px;
+  font-weight: 500;
+  color: #22bbbe;
+  position: relative;
+}
+.thithi-date {
+  font-size: 11px;
+  font-weight: 500;
+  position: absolute;
+  bottom: 4px;
+  color: #ff1d1dba;
+  right: 10px;
+}
+.moon-icon {
+  height: 18px;
+  position: absolute;
+  top: 2px;
+  left: 4px;
+}
+.today{
+  background: #d1f3f3;
+  border: 1px solid darkgrey;
+}
